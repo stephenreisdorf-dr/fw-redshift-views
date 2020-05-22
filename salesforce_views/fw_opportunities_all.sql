@@ -10,16 +10,16 @@ fo.opportunity_id
 , fp.invoice_sent_date
 , fp.invoice_paid_date
 , fp.payment_due_date
-, fo.record_type as opportunity_record_type
-, fo.owner as opportunity_owner
-, fo.stage as opportunity_stage
-, fo.lead_source as opportunity_lead_source
-, fo.close_date as close_date
-, fo.date_of_sales_qualification as date_of_sales_qualification
-, fo.created_date as opportunity_created_date
-, fo.number_of_eligible_employees as opportunity_eligible_employees
-, fo.amount as opportunity_amount
-, fo.annual_amount as opportunity_annual_amount
+, fo.opportunity_record_type
+, fo.opportunity_owner
+, fo.opportunity_stage
+, fo.opportunity_lead_source
+, fo.close_date
+, fo.date_of_sales_qualification
+, fo.opportunity_created_date
+, fo.opportunity_eligible_employees
+, fo.amount
+, fo.annual_amount
 , fa.employees
 , fa.number_of_eligible_employees as account_eligible_employees
 , count(*) over (partition by fo.opportunity_id) as total_payments

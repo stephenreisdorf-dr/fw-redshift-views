@@ -9,7 +9,7 @@ opp.opportunity_id
 ,opp.close_date
 ,opp.date_of_sales_qualification
 ,opp.opportunity_created_date
-,opp.number_of_eligible_employees
+,opp.opportunity_eligible_employees
 ,opp.amount
 ,opp.annual_amount
 from (
@@ -24,7 +24,7 @@ from (
 	,case
 		when o.number_of_eligible_employees__c = '' then null
 		else cast(o.number_of_eligible_employees__c as numeric)
-	end as number_of_eligible_employees
+	end as opportunity_eligible_employees
 	,case
 		 when o.closedate = '' then null
 		 else cast(o.closedate as date)
