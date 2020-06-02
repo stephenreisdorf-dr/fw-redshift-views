@@ -7,6 +7,8 @@ SCRIPT_FOOTER = 'with no schema binding;'
 # List of directories with sql scripts to run
 sql_script_directories = [
 	'salesforce_views'
+	, 'product_views'
+	, 'pardot_views'
 ]
 
 # Get a Redshift engine
